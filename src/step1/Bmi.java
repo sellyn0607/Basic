@@ -1,10 +1,18 @@
 package step1;
 import java.util.Scanner;
-
+/**
+ 
+  
+ **/
 public class Bmi {
 	public static void main(String[] args) {
 		Scanner sca = new Scanner(System.in);
 		while(true){
+			System.out.println("0.종료 1.실행");
+			switch(sca.nextInt()){
+			case 0 : return;
+			case 1 : 
+				
 		System.out.println("몸무게를 입력하세요. ");
 	 	int a = sca.nextInt();
 		System.out.println("키를 입력하세요 ");
@@ -30,13 +38,11 @@ public class Bmi {
 			check="3단계 비만";
 
 		}
-		System.out.println("당신은 " +check + " 입니다. 종료하시려면 0을 입력해주세요");
-		int c= sca.nextInt();
-
-		switch(c){
-			case 0 : return;
-			default : break;
-		}
+		System.out.println("당신은 " +check + " 입니다."); break;
+			default : System.out.println("Error"); break; 
+		
+			}
+		
 }
 	}
 
