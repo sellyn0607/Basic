@@ -1,6 +1,8 @@
 package step1;
 import java.util.Scanner;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
+
 public class CheckGender {
 
 	public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class CheckGender {
 		char ch = Jumin.charAt(7);
 		String sex="";
 		String a="";
-
+		
 		switch(ch){
 			case '1' : case '3' : sex="남"; break;
 			case '2' : case '4' : sex="여"; break;
