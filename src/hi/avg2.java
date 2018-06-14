@@ -1,4 +1,7 @@
 package hi;
+
+import javax.swing.JOptionPane;
+
 //218쪽
 public class avg2{
 
@@ -6,7 +9,9 @@ public class avg2{
 		
 		for(int i=1;i<=9;i++) {
 			for(int j=2;j<=9;j++) {
-				System.out.print(j+"X"+i+"="+j*i+" ");
+				
+				JOptionPane.showMessageDialog(null,j+"X"+i+"="+j*i+" ");
+				//System.out.print(j+"X"+i+"="+j*i+" ");
 				
 			}
 			System.out.println("");
